@@ -85,8 +85,10 @@ footer{
 }
 
 #pageHeader{
+  position: fixed;
   display: inline-block;
   background:#0e89d5;
   right:0;
+  left: 0;
 }
 

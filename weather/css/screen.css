@@ -49,10 +49,16 @@ nav ul li {
     list-style: none; 
   }
 
+#links{
+  position:fixed;
+  bottom: 0;
+}
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
+    background:#0e89d5;
   }
 
 footer{
@@ -84,4 +90,18 @@ footer{
 #pageHeader{
   display: inline-block;
   background:#0e89d5;
+
+}
+footer{
+  background:#0e89d5;
+}
+
+.brand{
+  display: inline-block
+}
+
+section{
+  margin: .2em auto;
+  border: 1px solid;
+  border-radius: 15px;
 }

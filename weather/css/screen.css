@@ -48,7 +48,7 @@ nav ul li {
     display: inline-block; 
     list-style: none; 
   }
-  
+
 nav {
     position: fixed;
     bottom: 0;
@@ -59,6 +59,7 @@ nav {
 
 footer{
     margin-bottom: 2em;
+    background:#0e89d5;
    }
 
 #siteBrand {
@@ -79,19 +80,13 @@ footer{
 }
 
 #logo{
-  font-size: 2em
+  height:100px;
   float:left;
 }
 
 #pageHeader{
   display: inline-block;
   background:#0e89d5;
-
-}
-footer{
-  background:#0e89d5;
+  right:0;
 }
 
-.brand{
-  display: inline-block
-}

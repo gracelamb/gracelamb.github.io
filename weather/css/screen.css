@@ -82,5 +82,6 @@ footer{
 }
 
 #pageHeader{
-  display: inline-block
+  display: inline-block;
+  background:#0e89d5;
 }

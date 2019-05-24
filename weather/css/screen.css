@@ -47,9 +47,6 @@ h1,h2,h3,h4,h5,h6 {
 nav ul li { 
     display: inline-block; 
     list-style: none; 
-    position: fixed;
-    bottom: 0;
-    left: 0;
   }
 
 nav {
@@ -80,5 +77,10 @@ footer{
 }
 
 #logo{
-  size: 2em
+  height: 2em;
+  width: 2em;
+}
+
+#pageHeader{
+  display: inline-block
 }

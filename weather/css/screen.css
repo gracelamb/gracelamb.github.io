@@ -65,6 +65,7 @@ footer{
 #siteBrand {
     font-size: 2em;
     font-weight: 600;
+    vertical-align: baseline;
   }
 
 .title{
@@ -86,9 +87,9 @@ footer{
 
 #pageHeader{
   position: fixed;
-  display: inline-block;
-  background:#0e89d5;
   right:0;
   left: 0;
+  display: inline-block;
+  background:#0e89d5;
 }
 

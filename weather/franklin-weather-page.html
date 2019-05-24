@@ -6,6 +6,7 @@
   <meta name="description" content="An updated resource to inform of the current weather 
     conditions in Franklin, Idaho.">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
  </head>
 
  <body> 
@@ -31,11 +32,15 @@
     <section id="locationSec">
         <h1 id="locationTitle">Franklin, ID</h1>
             <section>
-                <ul>
-                    <li id="zip"><h2 id="zipH">Zip:</h2> 83237</li>
-                    <li id="elevation"><h2 id="elevationH">Elevation:</h2> 1514.246</li>
-                    <li id="location"><h2 id="locationH">Location:</h2> 42.07&deg;N, 111.79&deg;W </li>
-                </ul>
+                <dl>
+                    <dt>Zip: </dt>
+                        <dd id="zip">83237</dd>
+                    <dt>Elevation: </dt>
+                        <dd><span id="elevation">1514.246</span> ft</dd>
+                    <dt>Location:</dt>
+                        <dd id="location"><span id="latitude">42.07</span>&deg;N, 
+                            <span id="longitude">111.79</span>&deg;W </dd>
+                </dl>
             </section>
     </section>
 
@@ -45,42 +50,59 @@
             <li id="currentTemp">40&deg;F</li>
             <li id="highTemp">64&deg;F</li>
             <li id="lowTemp">41&deg;F</li>
-            <li id="feelsLike">Feels Like ??&deg;F</li>
+            <li id="feelsLike">Feels Like</li>
+            <li id="feelsLikeTemp"> ??&deg;F</li>
         </ul>
     </section>
 
     <section id="windSec">
         <h1 id="wind">Wind</h1>
-        <img src="images/weather-site-images/wind-pointer.png" 
-            alt="Compass Displaying Wind Direction">
-        <ul>
-            <li id="mph">5 mph</li>
-            <li id="direction"><h2 id="directionH">Direction:</h2>SW</li>
-            <li id="gust"><h2 id="gustH">Gust:</h2>10-12 mph</li>
-        </ul>
+        <dl>
+            <dt><img src="images/weather-site-images/wind-pointer.png" 
+            alt="Compass Displaying Wind Direction"></dt>
+                <dd id="mph">5 mph</dd>
+            <dt id="direction">Direction:</dt>
+                <dd id="dValue">SW</dd>
+            <dt id="gust">Gust:</dt>
+                <dd id="gValue">10-12 mph</dd>
+        </dl>
     </section>
 
     <section id="clearSec">
         <h1 id="clear">Clear</h1>
+        <img src="images/weather-site-images/clear.jpg" alt="Image describing the weather">
     </section>
 
     <section id="hourlySec">
         <h1 id="hourlyForecast">Hourly Forecast</h1>
-        <ul>
-            <li id="hour1">10am 41&deg;F</li>
-            <li id="hour1">11am 41&deg;F</li>
-            <li id="hour1">12pm 41&deg;F</li>
-            <li id="hour1">1pm 41&deg;F</li>
-            <li id="hour1">2pm 41&deg;F</li>
-            <li id="hour1">3pm 41&deg;F</li>
-            <li id="hour1">4pm 42&deg;F</li>
-            <li id="hour1">5pm 44&deg;F</li>
-            <li id="hour1">6pm 44&deg;F</li>
-            <li id="hour1">7pm 46&deg;F</li>
-            <li id="hour1">8pm 49&deg;F</li>
-            <li id="hour1">9pm 51&deg;F</li>
-            <li id="hour1">10pm 55&deg;F</li>
-        </ul>
+        <dl>
+            <dt id="hour1">10am</dt>
+                <dd id="degree1"> 41&deg;F</dd>
+            <dt id="hour2">11am 41&deg;F</dt>
+                <dd id="degree2"> 41&deg;F</dd>
+            <dt id="hour3">12pm 41&deg;F</dt>
+                <dd id="degree3"> 41&deg;F</dd>
+            <dt id="hour4">1pm 41&deg;F</dt>
+                <dd id="degree4"> 41&deg;F</dd>
+            <dt id="hour5">2pm 41&deg;F</dt>
+                <dd id="degree5"> 41&deg;F</dd>
+            <dt id="hour6">3pm 41&deg;F</dt>
+                <dd id="degree6"> 41&deg;F</dd>
+            <dt id="hour7">4pm 42&deg;F</dt>
+                <dd id="degree7"> 41&deg;F</dd>
+            <dt id="hour8">5pm 44&deg;F</dt>
+                <dd id="degree8"> 41&deg;F</dd>
+            <dt id="hour9">6pm 44&deg;F</dt>
+                <dd id="degree9"> 41&deg;F</dd>
+            <dt id="hour10">7pm 46&deg;F</dt>
+                <dd id="degree10"> 41&deg;F</dd>
+            <dt id="hour11">8pm 49&deg;F</dt>
+                <dd id="degree11"> 41&deg;F</dd>
+            <dt id="hour12">9pm 51&deg;F</dt>
+                <dd id="degree12"> 41&deg;F</dd>
+            <dt id="hour13">10pm 55&deg;F</dt>
+                <dd id="degree13"> 41&deg;F</dd>
+        </dl>
     </section>
     </main>
 

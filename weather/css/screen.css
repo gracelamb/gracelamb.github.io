@@ -1,18 +1,16 @@
-
-/* 1. Imports
-2. General Rules 
-3. Mobile 
-4. Larg(er) Rules */
-
 /* ******************************
 *  Stylesheet for Screened Devices
 *  Created by: Grace Lamb
 *  
+* Table of Contents
 *  1.  Includes (fonts and supplementary stylesheets)
 *  1.1 Normalize
 *  1.2 Google fonts
 *
 *  2.  General Styles (for all pages and devices)
+*  2.1 Navigation
+*  2.2 Current Weather
+*  2.3 Wind Styles
 *
 *  3.  Mobile First (styles specific to small screens)
 *
@@ -44,18 +42,42 @@ h1,h2,h3,h4,h5,h6 {
     font-family: sansita, Eurostyle, sans-serif;
   }
 
+/* 2.1 Navigation */
 nav ul li { 
     display: inline-block; 
     list-style: none; 
+    min-height: 40px;
   }
 
 nav {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background:#0e89d5;
   }
+  
+  nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 1em;
+  }  
+
+/* 2.2 Current Weather */
+
+/* 2.3 Wind Styles */
+
+#wind .northMark{
+  font-size: smaller;
+  margin: -.5em, 0, 0
+}
+
+/* 3.  Mobile First (styles specific to small screens) */
+
+body{
+  width: 100vw;
+}
 
 footer{
     margin-bottom: 2em;
@@ -65,7 +87,8 @@ footer{
 #siteBrand {
     font-size: 2em;
     font-weight: 600;
-    vertical-align: baseline;
+    vertical-align:center;
+    display: flex
   }
 
 .title{
@@ -73,6 +96,7 @@ footer{
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
+    text-align: center;
   }
 
 .lists{ 
@@ -81,7 +105,7 @@ footer{
 }
 
 #logo{
-  width:2em;
+  font-size:2em;
   float:left;
 }
 
@@ -93,3 +117,7 @@ footer{
   background:#0e89d5;
 }
 
+#forecastValues li {
+  overflow-x: scroll;
+  display: inline-block;
+}

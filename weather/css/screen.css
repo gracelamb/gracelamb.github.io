@@ -108,6 +108,7 @@ footer{
     margin-right: 10px;
   }  
 
+/* Sections */
 .title{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
@@ -118,7 +119,7 @@ footer{
 
 #weatherLook{
   background-size:cover;
-  background-image: url(/weather/images/weather-site-images/clear.jpg);
+  background-image: url(/weather/images/weather-site-images/rain.jpg);
 }
 
 #locationTitle{

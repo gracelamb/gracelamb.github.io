@@ -132,10 +132,12 @@ footer{
   font-size: 1.5em;
 }
 
-#locationInfo{
-  display: inline;
+#locationInfo {
+  display: flex;
+  flex-direction: row;
+  align-content:stretch;
   list-style:none;
-  font-size:16px;
+  font-size:12px;
 }
 
 .lists{ 

@@ -30,28 +30,27 @@
 
     <main id="main">
     <section id="locationSec">
-        <h1 id="locationTitle">Franklin, ID</h1>
-            <section>
-                <dl>
-                    <dt>Zip: </dt>
-                        <dd id="zip">83237</dd>
-                    <dt>Elevation: </dt>
-                        <dd><span id="elevation">1514.246</span> ft</dd>
-                    <dt>Location:</dt>
-                        <dd id="location"><span id="latitude">42.07</span>&deg;N, 
-                            <span id="longitude">111.79</span>&deg;W </dd>
-                </dl>
-            </section>
+        <h2 id="locationTitle">Franklin, ID</h2>
+                <ul id="locationInfo">
+                    <li>Zip: </li>
+                        <li id="zip">83237</li>
+                    <li><b>Elevation: </b></li>
+                        <li><span id="elevation">1514.246</span> ft</li>
+                    <li><b>Location: </b></li>
+                        <li id="location"><span id="latitude">42.07</span>&deg;N, 
+                            <span id="longitude">111.79</span>&deg;W </li>
+                </ul>
     </section>
 
+    <div id="weatherLook">
     <section id="tempSec" class="title">
         <h1 id="temperature">Temperature</h1>
         <ul class="lists">
             <li id="currentTemp">40&deg;F</li>
-            <li id="highTemp">64&deg;F</li>
-            <li id="lowTemp">41&deg;F</li>
-            <li id="feelsLike">Feels Like</li>
-            <li id="feelsLikeTemp"> ??&deg;F</li>
+            <li id="highTemp" class="temps">64&deg;F</li>
+            <li id="lowTemp" class="temps">41&deg;F</li>
+            <li id="feelsLike" class="feeltemps">Feels Like</li>
+            <li id="feelsLikeTemp" class="feeltemps"> ??&deg;F</li>
         </ul>
     </section>
 
@@ -70,8 +69,10 @@
 
     <section id="clearSec" class="title">
         <h1 id="clear">Clear</h1>
-        <!-- <img src="images/weather-site-images/clear.jpg" alt="Image describing the weather"> -->
+        <img id="clearimg" src="images/weather-site-images/clear.jpg" alt="Image describing the weather">
     </section>
+
+</div>
 
     <section id="hourlySec" class="title">
         <h1 id="hourlyForecast">Hourly Forecast</h1>
@@ -107,8 +108,8 @@
     </main>
 
     <footer id="footer">
-        &copy;2019, The Weather Site
+        <p>&copy;2019 - The Weather Site</p>
     </footer>
-    
+
  </body>
 </html>

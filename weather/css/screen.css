@@ -47,21 +47,24 @@ nav ul li {
     display: inline-block; 
     list-style: none; 
     min-height: 40px;
+    font-size: 16px;
   }
 
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
     background:#0e89d5;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
   }
   
-  nav a{
+nav a{
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 1em;
+    padding: .5em;
   }  
 
 /* 2.2 Current Weather */
@@ -79,17 +82,36 @@ body{
   width: 100vw;
 }
 
+/* Footer */
 footer{
+    margin-top: -15px;
     margin-bottom: 2em;
     background:#0e89d5;
    }
 
-#siteBrand {
-    font-size: 2em;
-    font-weight: 600;
-    vertical-align:center;
-    display: flex
+/* Header */
+#pageHeader{
+  width:100vw;
+  right:0;
+  left: 0;
+  display: inline-block;
+  background:#0e89d5;
   }
+
+#siteBrand {
+    font-size: 2em; 
+    font-weight: 600;
+    margin:0;
+    vertical-align: baseline;  
+  }
+
+  #logo{
+    font-size:2em;
+    float:left;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+  }  
 
 .title{
     background-color: rgba(200,200,200,.6);
@@ -99,25 +121,61 @@ footer{
     text-align: center;
   }
 
+#weatherLook{
+  background-size:cover;
+  background-image: url(/weather/images/weather-site-images/clear.jpg);
+}
+
+#locationTitle{
+  margin-left: 5px;
+  margin-bottom: 12px;
+  font-size: 1.5em;
+}
+
+#locationInfo{
+  display: inline;
+  list-style:none;
+  font-size:16px;
+}
+
 .lists{ 
     display: inline-block; 
     list-style: none;
 }
 
-#logo{
-  font-size:2em;
-  float:left;
+#highTemp{
+  color: red;
+  padding-right: 10px
 }
 
-#pageHeader{
-  position: absolute;
-  right:0;
-  left: 0;
-  display: inline-block;
-  background:#0e89d5;
+#lowTemp{
+  color: blue;
+  padding-left: 5px;
 }
 
-#forecastValues li {
+.temps{
+  display:inline;
+}
+
+.feeltemps{
+  display: block;
+}
+
+#currentTemp{
+  font-size:4em;
+  font-weight: 100;
+}
+
+#forecastValues li{
   overflow-x: scroll;
-  display: inline-block;
+  display: inline;
+}
+
+#forecastValues {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#clearimg{
+  max-width: 200px;
 }

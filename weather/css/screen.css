@@ -71,11 +71,6 @@ nav a{
 
 /* 2.3 Wind Styles */
 
-#wind .northMark{
-  font-size: smaller;
-  margin: -.5em, 0, 0
-}
-
 /* 3.  Mobile First (styles specific to small screens) */
 
 body{

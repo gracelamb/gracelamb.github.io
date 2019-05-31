@@ -57,7 +57,6 @@ nav {
     background:#0e89d5;
     width: 100vw;
     height: auto;
-    z-index: 1;
   }
   
 nav a{
@@ -80,7 +79,7 @@ body{
 /* Footer */
 footer{
     margin-top: -15px;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     background:#0e89d5;
    }
 
@@ -130,10 +129,20 @@ footer{
 
 #locationInfo {
   display: flex;
-  flex-direction: row;
-  align-content:stretch;
+  white-space: nowrap;
+  /* flex-direction: row;
+  justify-content: space-between; */
+}
+
+#locationList{
   list-style:none;
   font-size:12px;
+  /* display: inline;
+  white-space: nowrap; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch; */
 }
 
 .lists{ 
@@ -177,3 +186,9 @@ footer{
 #clearimg{
   max-width: 200px;
 }
+
+/* @media screen and (min-width): 760px {
+  #conditions{
+    display:flex;
+  }
+} */

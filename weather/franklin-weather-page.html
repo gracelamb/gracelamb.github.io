@@ -47,10 +47,14 @@
     <div id="weatherLook">
     <section id="tempSec" class="title">
         <h1 id="temperature">Temperature</h1>
+            <p id="currentTemp">40&deg;F</p>
+            
         <ul class="lists">
-            <li id="currentTemp">40&deg;F</li>
             <li id="highTemp" class="temps">64&deg;F</li>
             <li id="lowTemp" class="temps">41&deg;F</li>
+        </ul> 
+
+        <ul>
             <li id="feelsLike" class="feeltemps">Feels Like</li>
             <li id="feelsLikeTemp" class="feeltemps"> ??&deg;F</li>
         </ul>
@@ -58,15 +62,20 @@
 
     <section id="windSec" class="title">
         <h1 id="wind">Wind</h1>
-        <dl>
-            <dt><img src="images/weather-site-images/wind-pointer.png" 
-            alt="Compass Displaying Wind Direction"></dt>
-                <dd id="mph">5 mph</dd>
-            <dt id="direction">Direction:</dt>
-                <dd id="dValue">SW</dd>
-            <dt id="gust">Gust:</dt>
-                <dd id="gValue">10-12 mph</dd>
-        </dl>
+        <div id="compass">
+            <img src="images/weather-site-images/wind-pointer.png" 
+                alt="Compass Displaying Wind Direction">
+                    <p id="mph">5 mph</p>
+        </div>
+        <ul id="direct">
+            <li id="direction" class="direct"><b>Direction:</b></li>
+                <li id="dValue" class="direct ">SW</li>
+        </ul>
+
+        <ul id="gust">
+            <li id="gust" class="indent gusts "><b>Gust:</b></li>
+                <li id="gValue" class="gusts">10-12 mph</li>
+        </ul>
     </section>
 
     <section id="clearSec" class="title">

@@ -19,10 +19,13 @@
 * ****************************** */
 
 /* 1.  Includes (fonts and supplementary stylesheets) */
+
 /*1.1 Normalize */
 @import url('normalize.css');
+
 /*1.2 Google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
 
 /* 2.  General Styles (for all pages and devices) */
 html {
@@ -108,7 +111,7 @@ footer{
   }  
 
 /* Sections */
-.title{
+.tile{
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
@@ -185,8 +188,31 @@ footer{
   display: inline;
 }
 
-/* @media screen and (min-width): 760px {
+/* 
+alters the condition it is currently in 
+@media screen and (min-width: 760px) {
   #conditions{
     display:flex;
   }
 } */
+
+/* 4.  Large Screen Styles (Media Queries begin here) */
+
+@media screen and (min-width: 800px){
+  #siteBrand{
+    font-size:4em;
+  }
+
+  #weatherLook{
+    display:flex;
+  }
+
+  .tile{
+    flex-grow: 1;
+  }
+
+  #locationSec ul{
+    font-size:16px;
+    max-width:35vw;
+  }
+}

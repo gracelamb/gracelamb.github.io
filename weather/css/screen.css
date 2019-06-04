@@ -205,10 +205,17 @@ alters the condition it is currently in
 
   #weatherLook{
     display:flex;
+    padding-top:20px;
+    padding-bottom:20px;
   }
 
   .tile{
     flex-grow: 1;
+  }
+
+  .info{
+    max-width: 30vw;
+    max-height: 30vw;
   }
 
   #locationSec ul{

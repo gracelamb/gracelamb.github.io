@@ -222,4 +222,13 @@ alters the condition it is currently in
     font-size:16px;
     max-width:35vw;
   }
+
+  nav{
+    position:absolute;
+    bottom:22em;
+  }
+
+  #locationTitle{
+    margin-top:2.5em;
+  }
 }

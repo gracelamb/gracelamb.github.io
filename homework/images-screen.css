@@ -1,0 +1,15 @@
+/* Small Screens */
+.large{
+    display:none;
+}
+
+/* Large Screens */
+@media (min-width:800px){
+.small{
+    display:none;
+}
+
+.large {
+    display: block;
+}
+}

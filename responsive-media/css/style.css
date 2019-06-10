@@ -49,8 +49,8 @@ h1 {
 
 /*	Background Images - use with Small screens */
 
-.page-header {background: url(/responsive_media/images/logo_50.jpg) right top no-repeat, 
-	url(/responsive_media/images/banner_400.jpg);
+.page-header {background: url(/responsive-media/images/logo_50.jpg) right top no-repeat, 
+	url(/responsive-media/images/banner_400.jpg);
 	background-size:auto,cover;
 }
 
@@ -173,8 +173,8 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {background-image: url(/responsive_media/images/logo_150.jpg) right top no-repeat,
-		url(/responsive_media/images/banner_1400.jpg) no-repeat;
+	.page-header {background-image: url(/responsive-media/images/logo_150.jpg) right top no-repeat,
+		url(/responsive-media/images/banner_1400.jpg) no-repeat;
 		background-size:auto, cover;
 	}
 	.page-nav {
@@ -221,8 +221,8 @@ h1 {
 		line-height: 1.05;
 	}
 	/*	Background Images - Use with large screens */
-	.page-header {background: url(/responsive_media/images/logo_150.jpg) right top no-repeat,
-		url(/responsive_media/images/banner_1200.jpg) no-repeat;
+	.page-header {background: url(/responsive-media/images/logo_150.jpg) right top no-repeat,
+		url(/responsive-media/images/banner_1200.jpg) no-repeat;
 		background-size:auto, cover;	
 	}
 

@@ -239,4 +239,8 @@ alters the condition it is currently in
   #locationTitle{
     margin-top:2.5em;
   }
+
+  footer{
+    margin: 0;
+  }
 }

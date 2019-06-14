@@ -72,7 +72,6 @@ nav a{
 /* 2.2 Current Weather */
 #weatherLook{
   background-size:cover;
-  background-image: url(/weather/images/weather-site-images/rain.jpg);
 }
 
 /* 2.3 Wind Styles */

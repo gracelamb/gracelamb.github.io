@@ -9,8 +9,9 @@ const speed = 5;
 buildWC(speed, temp);
 const direction = "NNE"; //Set your own value
 windDial(direction);
-const weather = "wet wether"
+const weather = "wet weather";
 getCondition(weather);
+changeSummaryImage(weather);
 const value = 45.89;
 convertMeters(value);
 
@@ -86,29 +87,33 @@ function windDial(direction){
 function getCondition(weather){
 
     //Declare return variable
-    const condition = ""
+    let condition = ""
+    console.log(weather);
 
     // Determine the condition
-    if(weather == str.includes("clear") || weather == str.includes("sun")){
+    if(weather == weather.includes("clear") || weather == weather.includes("sun")){
         condition = "clear";
         return condition;
     }
-    else if(weather == str.includes("cloud") || weather == str.includes("overcast")){
+    else if(weather == weather.includes("cloud") || weather == weather.includes("overcast")){
         condition = "clouds";
         return condition;
     }
-    else if(weather == str.includes("fog")){
+    else if(weather == weather.includes("fog")){
         condition = "fog";
         return condition;
     }
-    else if(weather == str.includes("rain") || weather == str.includes("wet")){
+    else if(weather == weather.includes("rain") || weather == weather.includes("wet")){
         condition = "rain";
         return condition;
     }
-    else if(weather == str.includes("snow")){
+    else {   
+    // if(weather == weather.includes("snow")){
         condition = "snow";
         return condition;
     }
+
+    
 }
 
 // Change Summary Image Function
@@ -117,20 +122,27 @@ function changeSummaryImage(condition){
     // Get the background container
     const image = document.getElementById("weatherLook");
     console.log(image);
+    console.log(condition)
 
     // Determine the background image
-    switch(image){
+    switch(condition){
         case "clear":
             weatherLook.setAttribute("class", "clear");
+            break;
         case "clouds":
             weatherLook.setAttribute("class", "clouds");
+            break;
         case "fog":
             weatherLook.setAttribute("class", "fog");
+            break;
         case "rain":
             weatherLook.setAttribute("class", "rain");
+            break;
         case "snow":
             weatherLook.setAttribute("class", "snow");
+            break;
     }
+    console.log(condition);
 }
 
 // Convert to meters function

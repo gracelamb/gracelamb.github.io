@@ -7,6 +7,8 @@
 const temp = 31;
 const speed = 5;
 buildWC(speed, temp);
+const direction = "NNE"; //Set your own value
+windDial(direction);
 
 // Wind Chill Function
 function buildWC(speed, temp){

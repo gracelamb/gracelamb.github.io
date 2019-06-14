@@ -70,6 +70,10 @@ nav a{
   }  
 
 /* 2.2 Current Weather */
+#weatherLook{
+  background-size:cover;
+  background-image: url(/weather/images/weather-site-images/rain.jpg);
+}
 
 /* 2.3 Wind Styles */
 .w{
@@ -140,6 +144,27 @@ footer{
     margin-right: 10px;
   }  
 
+/* Background pictures for summary */
+.clear{
+    background-image: url(/weather/images/weather-site-images/responsive-images/clear-350.jpg);
+ }
+
+.clouds{
+    background-image: url(/weather/images/weather-site-images/responsive-images/clouds-300.jpg);
+ }
+
+.fog{
+    background-image: url(/weather/images/weather-site-images/responsive-images/fog-600.jpg);
+ }
+
+.rain{
+   background-image: url(/weather/images/weather-site-images/responsive-images/rain-500.jpg);
+}
+
+.snow{
+   background-image: url(/weather/images/weather-site-images/responsive-images/snow-250.jpg);
+}
+
 /* Sections */
 .tile{
     background-color: rgba(200,200,200,.6);
@@ -148,11 +173,6 @@ footer{
     border-radius: 15px;
     text-align: center;
   }
-
-#weatherLook{
-  background-size:cover;
-  background-image: url(/weather/images/weather-site-images/rain.jpg);
-}
 
 #locationTitle{
   margin-left: 5px;
@@ -273,4 +293,25 @@ alters the condition it is currently in
   footer{
     margin: 0;
   }
+
+.clear{
+    background-image: url(/weather/images/weather-site-images/responsive-images/clear-700.jpg);
+ }
+
+.clouds{
+    background-image: url(/weather/images/weather-site-images/responsive-images/clouds-750.jpg);
+ }
+
+.fog{
+    background-image: url(/weather/images/weather-site-images/responsive-images/fog-1200.jpg);
+ }
+
+.rain{
+   background-image: url(/weather/images/weather-site-images/responsive-images/rain-1000.jpg);
+}
+
+.snow{
+   background-image: url(/weather/images/weather-site-images/responsive-images/snow-500.jpg);
+}
+
 }

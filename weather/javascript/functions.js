@@ -78,7 +78,61 @@ function windDial(direction){
        }
 }
 
+// Get Condition Function
+function getCondition(weather){
 
+    // 
+
+
+    // Determine the condition
+    if(weather == str.includes("clear") || weather == str.includes("sun")){
+        condition = "clear";
+        return condition;
+    }
+    else if(weather == str.includes("cloud") || weather == str.includes("overcast")){
+        condition = "clouds";
+        return condition;
+    }
+    else if(weather == str.includes("fog")){
+        condition = "fog";
+        return condition;
+    }
+    else if(weather == str.includes("rain") || weather == str.includes("wet")){
+        condition = "rain";
+        return condition;
+    }
+    else if(weather == str.includes("snow")){
+        condition = "snow";
+        return condition;
+    }
+}
+
+// Change Summary Image Function
+function changeSummaryImage(condition){
+
+    // Get the background container
+    const image = document.getElementById("weatherLook");
+    console.log(image);
+
+    // Determine the background image
+    switch(image){
+        case "clear":
+            weatherLook.setAttribute("class", "clear");
+        case "clouds":
+            weatherLook.setAttribute("class", "clouds");
+        case "fog":
+            weatherLook.setAttribute("class", "fog");
+        case "rain":
+            weatherLook.setAttribute("class", "rain");
+        case "snow":
+            weatherLook.setAttribute("class", "snow");
+    }
+}
+
+// Convert to meters function
+function convertMeters(){
+
+}
 
 
 // string literal: console.log(`raw windchill is: ${wc}`)

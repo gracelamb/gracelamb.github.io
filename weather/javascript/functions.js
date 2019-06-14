@@ -9,10 +9,11 @@ const speed = 5;
 buildWC(speed, temp);
 const direction = "NNE"; //Set your own value
 windDial(direction);
-const weather = "wet weather";
-getCondition(weather);
-changeSummaryImage(weather);
-const value = 45.89;
+let forecast = "wet";
+getCondition(forecast);
+let condition = getCondition(forecast);
+changeSummaryImage(condition);
+let value = 45.89;
 convertMeters(value);
 
 // Wind Chill Function
@@ -84,35 +85,40 @@ function windDial(direction){
 }
 
 // Get Condition Function
-function getCondition(weather){
+function getCondition(forecast){
 
     //Declare return variable
     let condition = ""
-    console.log(weather);
+    console.log(forecast);
 
     // Determine the condition
-    if(weather == weather.includes("clear") || weather == weather.includes("sun")){
+    if(forecast.includes("clear") || forecast.includes("sun")){
         condition = "clear";
+        console.log(condition);
         return condition;
     }
-    else if(weather == weather.includes("cloud") || weather == weather.includes("overcast")){
+    else if(forecast.includes("cloud") || forecast.includes("overcast")){
         condition = "clouds";
+        console.log(condition);
         return condition;
     }
-    else if(weather == weather.includes("fog")){
+    else if(forecast.includes("fog")){
         condition = "fog";
+        console.log(condition);
         return condition;
     }
-    else if(weather == weather.includes("rain") || weather == weather.includes("wet")){
+    else if(forecast.includes("rain") || forecast.includes("wet") || forecast.includes("precipitation")){
         condition = "rain";
+        console.log(condition);
         return condition;
     }
-    else {   
-    // if(weather == weather.includes("snow")){
+    else if(forecast.includes("snow") || forecast.includes("flurry")){
         condition = "snow";
+        console.log(condition);
         return condition;
     }
 
+    
     
 }
 

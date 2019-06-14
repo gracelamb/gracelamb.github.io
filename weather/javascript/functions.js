@@ -9,6 +9,10 @@ const speed = 5;
 buildWC(speed, temp);
 const direction = "NNE"; //Set your own value
 windDial(direction);
+const weather = "wet wether"
+getCondition(weather);
+const value = 45.89;
+convertMeters(value);
 
 // Wind Chill Function
 function buildWC(speed, temp){
@@ -81,8 +85,8 @@ function windDial(direction){
 // Get Condition Function
 function getCondition(weather){
 
-    // 
-
+    //Declare return variable
+    const condition = ""
 
     // Determine the condition
     if(weather == str.includes("clear") || weather == str.includes("sun")){
@@ -130,7 +134,11 @@ function changeSummaryImage(condition){
 }
 
 // Convert to meters function
-function convertMeters(){
+function convertMeters(value){
+
+    // Convert meters to feet
+    const newVal = Math.round(value * 3.28);
+    return newVal;
 
 }
 

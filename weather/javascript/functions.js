@@ -32,7 +32,8 @@ function buildWC(speed, temp){
 function windDial(direction){
 
     // Get the wind dial container
-    const dial = document.getElementById("dial");
+    const dial = document.getElementById("compass");
+    console.log(direction);
 
     // Determine the dial class
     switch (direction){
@@ -78,3 +79,4 @@ function windDial(direction){
 
 
 
+// string literal: console.log(`raw windchill is: ${wc}`)

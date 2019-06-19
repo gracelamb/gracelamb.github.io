@@ -13,7 +13,7 @@ let forecast = "wet";
 getCondition(forecast);
 let condition = getCondition(forecast);
 changeSummaryImage(condition);
-let value = 45.89;
+let value = document.getElementById("elevation");
 convertMeters(value);
 
 // Wind Chill Function
@@ -156,7 +156,7 @@ function convertMeters(value){
 
     // Convert meters to feet
     let newVal = Math.round(value * 3.28);
-    return newVal;
+    document.getElementById("elevation") = newVal;
 
 }
 

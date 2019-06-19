@@ -260,9 +260,17 @@ alters the condition it is currently in
 /* 4.  Large Screen Styles (Media Queries begin here) */
 
 @media screen and (min-width: 800px){
-  #siteBrand{
-    font-size:4em;
+  body{
+      max-width: 100%;
+      overflow-x: hidden;
   }
+  #siteBrand{
+    font-size:3.5em;
+  }
+
+  #logo{
+    font-size:3.5em;
+  }  
 
   #weatherLook{
     display:flex;
@@ -279,14 +287,14 @@ alters the condition it is currently in
     max-height: 30vw;
   }
 
-  #locationSec ul{
+  #locationSec ul a{
     font-size:16px;
     max-width:35vw;
   }
 
   nav{
     position:absolute;
-    bottom:22em;
+    bottom:23.5em;
   }
 
   #locationTitle{

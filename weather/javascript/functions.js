@@ -4,10 +4,10 @@
 
 
 // Variables for Function Use
-const temp = 31;
-const speed = 5;
+let temp = 31;
+let speed = 5;
 buildWC(speed, temp);
-const direction = "NNE"; //Set your own value
+let direction = "NNE"; //Set your own value
 windDial(direction);
 let forecast = "wet";
 getCondition(forecast);
@@ -18,7 +18,7 @@ convertMeters(value);
 
 // Wind Chill Function
 function buildWC(speed, temp){
-    const feelTemp = document.getElementById('feelsLikeTemp');
+    let feelTemp = document.getElementById('feelsLikeTemp');
 
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 
@@ -40,7 +40,7 @@ function buildWC(speed, temp){
 function windDial(direction){
 
     // Get the wind dial container
-    const dial = document.getElementById("compass");
+    let dial = document.getElementById("compass");
     console.log(direction);
 
     // Determine the dial class
@@ -126,7 +126,7 @@ function getCondition(forecast){
 function changeSummaryImage(condition){
 
     // Get the background container
-    const image = document.getElementById("weatherLook");
+    let image = document.getElementById("weatherLook");
     console.log(image);
     console.log(condition)
 
@@ -155,7 +155,7 @@ function changeSummaryImage(condition){
 function convertMeters(value){
 
     // Convert meters to feet
-    const newVal = Math.round(value * 3.28);
+    let newVal = Math.round(value * 3.28);
     return newVal;
 
 }

@@ -2,7 +2,7 @@
 <html lang="en-us">
  <head>
   <meta charset="UTF-8">
-  <title>Franklin, ID | Weather Site</title>
+  <title id="title">Greenville, NC | Weather Site</title>
   <meta name="description" content="An updated resource to inform of the current weather 
     conditions in Franklin, Idaho.">
   <meta name="viewport" content="width=device-width">
@@ -26,11 +26,13 @@
             <li id="greenville" class="links"><a href="/weather/greenville-weather-page.html" title="Go to the Greenville Weather 
                 Site home page">Greenville</a></li>   
         </ul>
-    </nav>     
+    </nav>    
+    
+    <section id="status">Please be patient while I get your weather information.</section>
 
-    <main id="main">
+    <main id="main" class="hide">
     <section id="locationSec">
-        <h2 id="locationTitle">Franklin, ID</h2>
+        <h2 id="locationTitle">Greenville, NC</h2>
                 <ul id="locationList">
                     <li><b>Zip: </b></li>
                         <li id="zip"> 83237 |</li>
@@ -121,6 +123,7 @@
     </footer>
 
     <script src="/weather/javascript/functions.js"></script>
+    <script src="/weather/javascript/localdata.js"></script>
 
  </body>
 </html>

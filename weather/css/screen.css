@@ -58,9 +58,9 @@ nav ul li {
   }
 
 nav {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     background:#0e89d5;
     width: 100vw;
     height: auto;
@@ -146,6 +146,15 @@ footer{
     margin-bottom: auto;
     margin-right: 10px;
   }  
+
+@media screen and (max-width: 759px) {
+  nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+ }
+ 
 
 /* Background pictures for summary */
 .clear{
@@ -292,9 +301,9 @@ alters the condition it is currently in
     max-width:35vw;
   }
 
-  nav{
-    position:absolute;
-    bottom:23.5em;
+  nav ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   #locationTitle{

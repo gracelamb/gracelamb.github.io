@@ -1,5 +1,4 @@
-"use strict"
-
+"use strict"; 
 
 
 
@@ -7,11 +6,12 @@
 let pageNav = document.getElementById('nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main');
+let weatherURL = "/weather/javascript/weather.json";
 fetchData(weatherURL);
 
 
 // Fetch Function
-let weatherURL = "/weather/javascript/weather.json";
+
 function fetchData(weatherURL){
   let cityName = 'Greenville'; // The data we want from the weather.json file
   fetch(weatherURL)
@@ -114,7 +114,7 @@ function fetchData(weatherURL){
 
     // Set the current conditions information
     let summary = document.getElementById('clear');
-    summary.innerHTML = currentConditions;
+    summary.innerHTML = currentCondition;
 
 
     // Set the hourly temperature information
@@ -128,6 +128,6 @@ function fetchData(weatherURL){
   })
   .catch(function(error){
   console.log('There was a fetch problem: ', error.message);
-  statusContainer.innerHTML = 'Sorry, the data could not be processed.';
+  status.innerHTML = 'Sorry, the data could not be processed.';
   })
 }

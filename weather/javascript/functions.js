@@ -15,7 +15,6 @@ let condition = getCondition(forecast);
 changeSummaryImage(condition);
 let value = document.getElementById("elevation");
 convertMeters(value);
-document.getElementById("elevation").innerHTML = newVal;
 
 // Wind Chill Function
 function buildWC(speed, temp){

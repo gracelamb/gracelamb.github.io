@@ -80,46 +80,42 @@ function fetchData(weatherURL){
     // The h1 in main h1 should now say "Greenville, SC"
 
     // Set the location specifics
-    let lat = document.getElementById('latitude');
-    lat.innerHTML = latit;
+    document.getElementById('latitude').innerHTML = latit;
 
-    let lon = document.getElementById('longitude');
-    lon.innerHTML = long;
+    document.getElementById('longitude').innerHTML = long;
 
-    let e = document.getElementById('elevation');
-    e.innerHTML = elev;
+    document.getElementById('elevation').innerHTML = elev;
 
-    let z = document.getElementById('zip');
-    z.innerHTML = zip;
+    document.getElementById('zip').innerHTML = zip;
 
     // Set the temperature information
-    let hTemp = document.getElementById('highTemp');
-    hTemp.innerHTML = highTemp;
+    document.getElementById('highTemp').innerHTML = highTemp + "&deg;F";
 
-    let lTemp = document.getElementById('lowTemp');
-    lTemp.innerHTML = lowTemp;
+    document.getElementById('lowTemp').innerHTML = lowTemp + "&deg;F";
 
-    let cTemp = document.getElementById('currentTemp');
-    cTemp.innerHTML = temp;
+    document.getElementById('currentTemp').innerHTML = temp + "&deg;F";
+
+    buildWC(windSpeed, temp);
 
     // Set the wind information
-    let speed = document.getElementById('mph');
-    speed.innerHTML = windSpeed;
+    document.getElementById('mph').innerHTML = windSpeed + " mph";
 
-    let direction = document.getElementById('dValue');
-    direction.innerHTML = windDirect;
+    document.getElementById('dValue').innerHTML = windDirect;
 
-    let gust = document.getElementById('gValue');
-    gust.innerHTML = gusts;
+    document.getElementById('gValue').innerHTML = gusts;
+
+    windDial(windDirect);
 
     // Set the current conditions information
-    let summary = document.getElementById('clear');
-    summary.innerHTML = currentCondition;
+    document.getElementById('clear').innerHTML = currentCondition;
+
+    changeSummaryImage(getCondition(currentCondition))
 
 
     // Set the hourly temperature information
-    let curTemp = document.getElementById('currentTemp');
-    curTemp.innerHTML = temp;
+    let date = new Date(); 
+    let nextHour = date.getHours() + 1;
+    buildHourlyData(nextHour,hourlyWeather)
 
 
     // Change the status of the containers

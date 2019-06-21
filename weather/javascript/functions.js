@@ -3,18 +3,18 @@
 ************************************* */
 
 
-// Variables for Function Use
-let temp = 31;
-let speed = 5;
-buildWC(speed, temp);
-let direction = "NNE"; //Set your own value
-windDial(direction);
-let forecast = "wet";
-getCondition(forecast);
-let condition = getCondition(forecast);
-changeSummaryImage(condition);
-let value = document.getElementById("elevation");
-convertMeters(value);
+// // Variables for Function Use
+// let temp = 31;
+// let speed = 5;
+// buildWC(speed, temp);
+// let direction = "NNE"; //Set your own value
+// windDial(direction);
+// let forecast = "wet";
+// getCondition(forecast);
+// let condition = getCondition(forecast);
+// changeSummaryImage(condition);
+// let value = document.getElementById("elevation");
+// convertMeters(value);
 
 // Wind Chill Function
 function buildWC(speed, temp){
@@ -107,7 +107,7 @@ function getCondition(forecast){
         console.log(condition);
         return condition;
     }
-    else if(forecast.includes("rain") || forecast.includes("wet") || forecast.includes("precipitation")){
+    else if(forecast.includes("rain") || forecast.includes("wet") || forecast.includes("precipitation")|| forecast.includes("storm")){
         condition = "rain";
         console.log(condition);
         return condition;

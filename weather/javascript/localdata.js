@@ -118,8 +118,8 @@ function fetchData(weatherURL){
 
 
     // Set the hourly temperature information
-    let cTemp = document.getElementById('currentTemp');
-    cTemp.innerHTML = temp;
+    let curTemp = document.getElementById('currentTemp');
+    curTemp.innerHTML = temp;
 
 
     // Change the status of the containers

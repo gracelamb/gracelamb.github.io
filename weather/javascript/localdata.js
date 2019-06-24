@@ -85,6 +85,7 @@ function fetchData(weatherURL){
     document.getElementById('longitude').innerHTML = long;
 
     document.getElementById('elevation').innerHTML = elev;
+    convertMeters(elev);
 
     document.getElementById('zip').innerHTML = zip;
 

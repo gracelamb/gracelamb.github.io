@@ -157,7 +157,7 @@ function convertMeters(value){
     // Convert meters to feet
     let newVal = Math.round(value * 3.28);
     console.log(newVal);
-    return newVal;
+    document.getElementById("elevation").innerHTML = newVal;
 
 }
 

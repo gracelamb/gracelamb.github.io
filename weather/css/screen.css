@@ -57,6 +57,10 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 12px;
 }
 
+#hourlyTemps li:after {
+  content: " \007C";
+}
+
 /* 2.1 Navigation */
 nav ul li { 
     display: inline-block; 

@@ -1,19 +1,30 @@
 "use strict"; 
-
-
-
 // Variables for function use.
 let pageNav = document.getElementById('nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main');
-let weatherURL = "/weather/javascript/weather.json";
-fetchData(weatherURL);
 
+pageNav.addEventListener("click",function(evt){
+let cityName = evt.target.innerHTML;
+console.log(cityName);
+
+// Only check for city names
+switch (cityName) {
+  case "Franklin":
+    case "Greenville":
+      case "Springfield":
+    evt.preventDefault();
+    break;
+}
+
+let weatherURL = "/weather/javascript/weather.json";
+
+
+// fetchData(weatherURL);
 
 // Fetch Function
-
-function fetchData(weatherURL){
-  let cityName = 'Greenville'; // The data we want from the weather.json file
+// function fetchData(weatherURL){
+//   let cityName = 'Greenville'; // The data we want from the weather.json file
   fetch(weatherURL)
   .then(function(response) {
   if(response.ok){
@@ -66,6 +77,9 @@ function fetchData(weatherURL){
     // Set the title with the location name at the first
     // Gets the title element so it can be worked with
     let pageTitle = document.getElementById('title');
+    if (pageTitle.childNodes.length>1){
+      pageTitle.childNodes[0].remove;
+    }
     // Create a text node containing the full name 
     let fullNameNode = document.createTextNode(fullName);
     // inserts the fullName value before any other content that might exist
@@ -127,4 +141,5 @@ function fetchData(weatherURL){
   console.log('There was a fetch problem: ', error.message);
   status.innerHTML = 'Sorry, the data could not be processed.';
   })
-}
+// } //ends function
+}) //this ends the event listener

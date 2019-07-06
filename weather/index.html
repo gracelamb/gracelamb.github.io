@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+ <head>
+  <meta charset="UTF-8">
+  <title id="title"> | Weather Site</title>
+  <meta name="description" content="An updated resource to inform of the current weather 
+    conditions in Franklin, Idaho.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
+ </head>
+ <!-- /* *************************************
+ *  Grace
+ *  Lance
+ *  Vlad
+ *  Aaron
+ ************************************* */ -->
+ <body> 
+    <header id="pageHeader">
+        <div id="logo" class="brand">&#9748;</div>
+        <h1 id="siteBrand" class="brand">The Weather Site</h1>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            <li id="current" class="links"><a href="#" title="Go to the Weather Site 
+                home page">Current</a></li>
+            <li id="search" class="links"><a href="#" title="Search for specific 
+                areas">Search</a></li> 
+            <li id="franklin" class="links"><a href="" title="Go to the Franklin Weather 
+                Site home page">Franklin</a></li>
+            <li id="greenville" class="links"><a href="" title="Go to the Greenville Weather 
+                Site home page">Greenville</a></li>   
+            <li id="springfield" class="links"><a href="" title="Go to the Springfield Weather 
+                Site home page">Springfield</a></li>  
+        </ul>
+    </nav>    
+    
+    <section id="status">Please be patient while I get your weather information.</section>
+
+    <main id="main" class="hide">
+    <section id="locationSec">
+        <h2 id="locationTitle">Greenville, NC</h2>
+                <ul id="locationList">
+                    <li><b>Zip: </b></li>
+                        <li> <span id="zip"> 83237 </span> | </li>
+                    <li><b> Elevation: </b></li>
+                        <li><span id="elevation">1514.246 </span> Ft |</li>
+                    <li><b>Location: </b></li>
+                        <li id="location"><span id="latitude">42.07</span>&deg;N, 
+                            <span id="longitude">111.79</span>&deg;W </li>
+                </ul>
+    </section>
+
+    <div id="weatherLook" class="snow">
+    <section id="tempSec" class="tile info">
+        <h1 id="temperature">Temperature</h1>
+
+        <ul>
+            <li><span id="currentTemp">40</span>&deg;F</s>
+        </ul>
+
+        <ul>
+            <li id="highTemp" class="temps">&deg;F</li>
+            <li id="lowTemp" class="temps">&deg;F</li>
+        </ul> 
+
+        <ul>
+            <li id="feelsLike" class="feeltemps">Feels Like</li>
+            <li id="feelTemp" class="feeltemps"><span id="feelsLikeTemp">??</span>&deg;F</li>
+        </ul>
+    </section>
+
+    <section id="windSec" class="tile info">
+        <h1 id="wind">Wind</h1>
+        <div id="compass" class="w"></div>
+        <p id="mph"> mph</p>
+        <ul id="direct">
+            <li id="direction" class="direct"><b>Direction:</b></li>
+                <li id="dValue" class="direct "></li>
+        </ul>
+
+        <ul id="gusts">
+            <li id="gust" class="indent gusts "><b>Gust:</b></li>
+                <li><span id="gValue" class="gusts"></span> </li>
+        </ul>
+    </section>
+
+    <section id="clearSec" class="tile info">
+        <h1 id="clear">Rain</h1>
+        <div id="icon" ></div>
+        <p id="details"> </p>
+    </section>
+
+</div>
+
+    <section id="hourlySec" class="tile">
+        <h1 id="hourlyForecast">Hourly Forecast</h1>
+        <ol id="forecastValues">
+            <li><span></span> | </li>
+        </ol>
+    </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy;2019 - The Weather Site</p>
+    </footer>
+
+    <script src="/weather/javascript/functions.js"></script>
+    <script src="/weather/javascript/geo-loc.js"></script>
+
+ </body>
+</html>

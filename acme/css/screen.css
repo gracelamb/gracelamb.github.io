@@ -1,0 +1,98 @@
+/* ******************************
+*  Stylesheet for Screened Devices
+*  Created by: Grace Lamb
+*  
+* Table of Contents
+*  1.  Includes (fonts and supplementary stylesheets)
+*  1.1 Normalize
+*  1.2 Google fonts
+*
+*  2.  General Styles (for all pages and devices)
+*  2.1 Navigation
+*  2.2 Body
+*  2.3 Footer
+*
+*  3.  Mobile First (styles specific to small screens)
+*
+*  4.  Large Screen Styles (Media Queries begin here)
+*
+* ****************************** */
+
+/* 1.  Includes (fonts and supplementary stylesheets) */
+
+/*1.1 Normalize */
+@import url("/weather/css/normalize.css");
+
+/*1.2 Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+/* 2.  General Styles (for all pages and devices) */
+html {
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: sansita, Eurostyle, sans-serif;
+  }
+
+hr {
+    height: 10px;
+    background-color:#000000;
+}
+
+#content{
+    margin: 0px;
+}
+
+/* 2.1 Navigation */
+#nav{
+    background:#de2226;
+    padding: 3px
+}
+
+#nav-list{
+    display: flex;
+    list-style-type: none;
+    font-size: 24x;
+    width: 400px;
+    padding:0px;
+} 
+
+nav li {
+    padding: 5px
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 2.2 Body */
+body{
+    font-family: helvetica, verdana, sans-serif;
+    background-image: url(/acme/images/site/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainDiv{
+    background-color:white;
+    max-width: 960px;
+    margin: auto;
+}
+
+/* 2.3 Footer */
+footer{
+    text-align: center;
+}
+footer p{
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+
+

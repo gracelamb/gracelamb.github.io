@@ -52,22 +52,31 @@ hr {
 /* 2.1 Navigation */
 #nav{
     background:#de2226;
-    padding: 3px
+    height:60px;
+    display: flex;
 }
 
 #nav-list{
-    display: flex;
+    display:flex;
     list-style-type: none;
     padding:0px;
+    align-self: center;
 } 
 
-nav li {
-    padding: 5px
+nav ul li {
+    padding: 5px;
 }
 
 nav a{
     color: white;
     text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color:white;
+    color: #de2226;
+    height:50px;
 }
 
 /* 2.2 Body */

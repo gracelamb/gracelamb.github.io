@@ -40,11 +40,12 @@ h1,h2,h3,h4,h5,h6 {
   }
 
 hr {
-    height: 10px;
+    height: 2px;
     background-color:#000000;
+    margin:5px;
 }
 
-#content{
+#contentTitle{
     margin: 0px;
 }
 
@@ -57,8 +58,6 @@ hr {
 #nav-list{
     display: flex;
     list-style-type: none;
-    font-size: 24x;
-    width: 400px;
     padding:0px;
 } 
 
@@ -74,6 +73,7 @@ nav a{
 /* 2.2 Body */
 body{
     font-family: helvetica, verdana, sans-serif;
+    font-size:1.5em;
     background-image: url(/acme/images/site/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,18 +81,141 @@ body{
 
 #mainDiv{
     background-color:white;
-    max-width: 960px;
     margin: auto;
 }
 
 /* 2.3 Footer */
 footer{
     text-align: center;
+    color:black;
 }
 footer p{
     margin-top: 0px;
     margin-bottom: 0px; 
 }
+#rocket{
+    position:relative;
+}
 
+#rocketAD{
+    position: absolute;
+    list-style:none;
+    margin-left:50%;
+    bottom:36%;
+    color: #de2226;
+    font-size: 28px;
+}
 
+/* 3.  Mobile First (styles specific to small screens) */
+#mainDiv{
+    max-width: 960px;
+}
 
+#feature{
+    flex-wrap: nowrap;
+    height:100%;
+    width:100%;
+}
+
+#rocketTitle{
+    margin-bottom:0;
+}
+
+#actionbtn{
+    width:96%;
+}
+
+#nav-list{
+    font-size:24px;
+}
+
+#logo{
+    width:75%;
+}
+
+#content{
+    font-size: 52px;
+}
+
+#reviewTitle, #featuredRec{
+    margin:0;
+    font-size: 52px;
+}
+
+#comments{
+    margin-left:5%;
+    font-size: 38px;
+}
+
+#rec{
+    display:flex;
+    width: 900px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
+ } 
+
+#rec figure{
+    width:350px;
+    margin-left:4px;
+    margin-right:4px;
+    text-align:center;
+    font-size:32px;
+ }
+
+#rec img{
+    background-color: #cdcbcd;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 350px;
+} 
+
+footer{
+    font-size: 24px;
+}
+
+/* 4.  Large Screen Styles (Media Queries begin here) */
+@media screen and (min-width: 800px) {
+#mainDic{
+    max-width:1000px;
+}
+
+#logo{
+    width: auto;
+}
+
+#content{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#reviewTitle, #featuredRec{
+    font-size: 32px;
+}
+
+#comments{
+    font-size:24px;
+}
+
+#recipes{
+    width:
+}
+#rec{
+    width: 320px;
+ } 
+
+#rec figure{
+    width:150px;
+    margin-left:4px;
+    margin-right:4px;
+    font-size:18px;
+    margin-top:0;
+ }
+
+#rec img{
+    background-color: #cdcbcd;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 150px;
+} 
+}

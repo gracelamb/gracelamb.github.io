@@ -26,7 +26,7 @@ function getData(){
 function buildNav(array){
   let items = '<li><a href="#">Home</a></li>';
   for (let i = 0, x = array.length; i < x; i++){
-      items += '<li><a href="#">' + array[i] + '</a><li>'
+      items += '<li><a href="#">' + array[i] + '</a></li>'
      }
      console.log(items);
      return items;

@@ -11,6 +11,7 @@
 *  2.1 Navigation
 *  2.2 Body
 *  2.3 Footer
+*  2.4 Content Pages
 *
 *  3.  Mobile First (styles specific to small screens)
 *
@@ -47,6 +48,10 @@ hr {
 
 #contentTitle{
     margin: 0px;
+}
+
+.hide{
+    display: none;
 }
 
 /* 2.1 Navigation */
@@ -107,12 +112,50 @@ footer p{
 }
 
 #rocketAD{
+    color: #de2226;
     position: absolute;
     list-style:none;
     margin-left:50%;
     bottom:36%;
-    color: #de2226;
-    font-size: 28px;
+}
+
+/* 2.4 Content Pages */
+#products{
+    display:flex;
+}
+
+#right{
+    margin:5%;
+    margin-top:4%;
+    width: 50%;
+}
+
+#left{
+    margin-left:1%;
+}
+
+#productName{
+    margin:0;
+    margin-bottom:4%;
+}
+
+#pImg{
+    margin-left: 2%;
+    width: 400px;
+}
+
+#manufacturer{
+    margin-bottom:0;
+}
+
+#pReviews{
+    margin-top:0;
+}
+
+#price{
+    color:#de2226;
+    font-size:52px;
+    margin-bottom:0;
 }
 
 /* 3.  Mobile First (styles specific to small screens) */
@@ -128,6 +171,10 @@ footer p{
 
 #rocketTitle{
     margin-bottom:0;
+}
+
+#rocketAD{
+    font-size:16px;
 }
 
 #actionbtn{
@@ -191,6 +238,10 @@ footer{
 
 #logo{
     width: auto;
+}
+
+#rocketAD{
+    font-size:28px;
 }
 
 #content{

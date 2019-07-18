@@ -69,6 +69,7 @@ hr {
 
 nav ul li {
     padding: 5px;
+    font-size:1.5em;
 }
 
 nav a{
@@ -237,6 +238,10 @@ body{
 
     #mainDiv{
    max-width: 960px;
+}
+
+nav ul li {
+    font-size:1em;
 }
 
 #logo{

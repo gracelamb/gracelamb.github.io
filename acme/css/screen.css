@@ -11,7 +11,6 @@
 *  2.1 Navigation
 *  2.2 Body
 *  2.3 Footer
-*  2.4 Content Pages
 *
 *  3.  Mobile First (styles specific to small screens)
 *
@@ -90,7 +89,7 @@ body{
     font-size:1.5em;
     background-image: url(/acme/images/site/background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    margin:8px;
 }
 
 #mainDiv{
@@ -119,48 +118,13 @@ footer p{
     bottom:36%;
 }
 
-/* 2.4 Content Pages */
-#products{
-    display:flex;
-}
-
-#right{
-    margin:5%;
-    margin-top:4%;
-    width: 50%;
-}
-
-#left{
-    margin-left:1%;
-}
-
-#productName{
-    margin:0;
-    margin-bottom:4%;
-}
-
-#pImg{
-    margin-left: 2%;
-    width: 400px;
-}
-
-#manufacturer{
-    margin-bottom:0;
-}
-
-#pReviews{
-    margin-top:0;
-}
-
-#price{
-    color:#de2226;
-    font-size:52px;
-    margin-bottom:0;
-}
-
 /* 3.  Mobile First (styles specific to small screens) */
+body{
+    width:900px;
+}
+
 #mainDiv{
-    max-width: 960px;
+    max-width: 860px;
 }
 
 #feature{
@@ -230,10 +194,49 @@ footer{
     font-size: 24px;
 }
 
+#right{
+
+    font-size:32px;
+}
+
+#productName{
+    margin-top:0;
+    margin-left:2%;
+    font-size:3em;
+}
+
+#right{
+    margin:50px;
+    font-size:2em;
+}
+
+#pImg{
+    margin-left: 5%;
+    width: 60%;
+}
+
+#manufacturer{
+    margin-bottom:0;
+}
+
+#pReviews{
+    margin-top:0;
+}
+
+#price{
+    color:#de2226;
+    font-size:1.5em;
+    margin-bottom:0;
+}
+
 /* 4.  Large Screen Styles (Media Queries begin here) */
 @media screen and (min-width: 800px) {
-#mainDic{
-    max-width:1000px;
+body{
+    width:auto;
+}
+
+    #mainDiv{
+   max-width: 960px;
 }
 
 #logo{
@@ -274,5 +277,34 @@ footer{
     padding-right: 30px;
     padding-left: 30px;
     width: 150px;
-} 
 }
+
+/*Content Pages */
+#products{
+    display:flex;
+}
+
+#right{
+    margin:5%;
+    margin-top:4%;
+    width: 50%;
+    font-size:1em;
+}
+
+#left{
+    margin-left:1%;
+}
+
+#productName{
+    margin:0;
+    margin-bottom:4%;
+    font-size:2em;
+}
+
+#pImg{
+    margin-left: 2%;
+    width: 400px;
+}
+
+} 
+

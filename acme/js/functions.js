@@ -32,6 +32,7 @@ function buildNav(array){
      return items;
 }
 
+// Build The Content Pages
 nav.addEventListener("click",function(evt){
   let productName = evt.target.innerHTML;
   console.log(productName);
